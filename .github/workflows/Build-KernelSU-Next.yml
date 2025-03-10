@@ -3,11 +3,11 @@ on:
   workflow_dispatch:
     inputs:
       CPU:
-        description: "sm8650"
+        description: "分支"
         required: true
         default: 'sm7675'
       FEIL:
-        description: "oneplus12_v"
+        description: "配置文件"
         required: true
         default: 'oneplus_ace_3v_v'
       CPUD:
@@ -15,20 +15,20 @@ on:
         required: true
         default: 'pineapple'
       ANDROID_VERSION:
-        description: "android14"
+        description: "内核安卓版本"
         required: true
         default: 'android14'
       KERNEL_VERSION:
-        description: "6.1"
+        description: "内核版本"
         required: true
         default: '6.1'
       KSUNEXT_ENABLED:
-        description: "true"
+        description: "添加 KSU Next"
         required: true
         type: boolean
         default: false
       SUSFS_ENABLED:
-        description: "true"
+        description: "添加 SUSFS"
         required: true
         type: boolean
         default: false
